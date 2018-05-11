@@ -22,6 +22,10 @@ class Lobby extends Model
 {
     use HasUserstamps, HasTimestamps;
 
+    protected $fillable = [
+        'name'
+    ];
+
 
     /**
      * @return BelongsTo|Game

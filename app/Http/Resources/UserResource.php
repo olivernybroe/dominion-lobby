@@ -1,10 +1,12 @@
 <?php
 
+
 namespace App\Http\Resources;
+
 
 use Illuminate\Http\Resources\Json\Resource;
 
-class LobbyResource extends Resource
+class UserResource extends Resource
 {
     /**
      * Transform the resource into an array.
@@ -17,7 +19,7 @@ class LobbyResource extends Resource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'players' => $this->players->count()."/x"
+            'email' => $this->email
         ];
     }
 }
